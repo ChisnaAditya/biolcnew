@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { onValue, ref } from "firebase/database";
 import { db } from "../firebase";
-// import { Link } from "@nextui-org/link";
+import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 
 export default function Links() {
@@ -19,7 +19,13 @@ export default function Links() {
   return (
     <div className="min-h-screen">
       <div className="flex flex-col items-center py-10">
-        <img alt="logolc" src={`../favicon.ico`} className="w-[50px]" />
+        <Image
+          width={50}
+          height={50}
+          alt="logolc"
+          src={`/favicon.ico`}
+          className="w-[50px]"
+        />
         <h1>@kampunginggrislc</h1>
       </div>
       <div className="max-w-2xl container">
