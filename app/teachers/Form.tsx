@@ -121,7 +121,7 @@ export function InputForm() {
           <DialogHeader>
             <DialogTitle>Add Teacher</DialogTitle>
             <DialogDescription>
-              Add your data profile here. Click add when you're done.
+              Add your data profile here. Click add when you are done.
             </DialogDescription>
           </DialogHeader>
           <Form {...form}>
