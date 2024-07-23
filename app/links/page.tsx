@@ -22,7 +22,6 @@ export default function Links() {
         <img alt="logolc" src={`../favicon.ico`} className="w-[50px]" />
         <h1>@kampunginggrislc</h1>
       </div>
-
       <div className="max-w-2xl container">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           Link Google Drive
