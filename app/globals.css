@@ -73,7 +73,7 @@
   opacity: 1;
   background-image: linear-gradient(#ececec 1px, transparent 1px),
     linear-gradient(to right, #ececec 1px, #fafafa 1px);
-  background-size: 20px 20px;
+  background-size: 40px 40px;
 }
 .bg-polygon {
   background-image: url("/background/Polygon2.svg");

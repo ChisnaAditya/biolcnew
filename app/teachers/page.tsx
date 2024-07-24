@@ -1,6 +1,5 @@
 "use client";
 
-import FloatButton from "@/components/FloatButton";
 import Card from "./Card";
 import { useEffect, useState } from "react";
 import { onValue, ref } from "firebase/database";
@@ -30,7 +29,7 @@ export default function Teachers() {
     <div className="relative min-h-screen bg-boxes">
       <div className="w-full p-20 bg-black/90 bg-polygon shadow-2xl">
         <h1 className="text-5xl text-redLC font-bold">Teachers</h1>
-        <h2 className="text-lg text-slate-200">Kampung Inggris LC, Pare</h2>
+        <h2 className="text-lg text-slate-200">Kampung Inggris LC</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-10">
         {dataRaw.map((teacher) => (
@@ -44,9 +43,7 @@ export default function Teachers() {
           </div>
         ))}
       </div>
-      {/* <FloatButton /> */}
       <InputForm />
-      {/* {console.log(dataRaw) as any} */}
     </div>
   );
 }

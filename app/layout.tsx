@@ -26,7 +26,7 @@ export default function RootLayout({
           @2024 Powered by{" "}
           <span className="text-redLC">Marketing Language Center</span>
         </footer> */}
-          <footer className="py-10 text-center bg-gradient-to-t ">
+          <footer className="py-10 text-center text-sm bg-gradient-to-t ">
             @2024 Powered by Marketing{" "}
             <span className="text-redLC">Language Center</span>
           </footer>
