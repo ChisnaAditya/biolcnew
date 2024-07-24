@@ -37,7 +37,7 @@ export default function Card(props: teacher) {
             <Avatar src="/teachers/TEACHER 3 GIN.png" />
           </div>
           <div>
-            <h3 className="text-lg text-black/90 font-bold uppercase">
+            <h3 className="text-md text-black/90 font-bold uppercase">
               {props.nama}
             </h3>
             <p className="flex items-center gap-1 text-sm text-slate-500 capitalize">
@@ -60,7 +60,7 @@ export default function Card(props: teacher) {
           <DialogPopup uid={props.uid} />
         </div>
       </div>
-      <div className="dropdown text-md border-t-2 py-2">
+      <div className="dropdown text-sm border-t-2 py-2">
         {isOpen ? props.keterangan : props.keterangan.substring(0, 50) + `...`}
       </div>
       <p
