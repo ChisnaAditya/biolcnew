@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,18 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`dark ${inter.className}`}>
+        {/* <Navbar /> */}
         <Providers>
           {children}
           <Toaster />
-          {/* <footer className="py-10 text-center bg-gradient-to-t from-yellow1LC to-yellow2LC">
-          @2024 Powered by{" "}
-          <span className="text-redLC">Marketing Language Center</span>
-        </footer> */}
-          <footer className="py-10 text-center text-sm bg-gradient-to-t ">
-            @2024 Powered by Marketing{" "}
-            <span className="text-redLC">Language Center</span>
-          </footer>
         </Providers>
       </body>
     </html>
