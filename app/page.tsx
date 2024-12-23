@@ -21,7 +21,7 @@ export default function Home() {
 
         <article className="prose">
           <blockquote className="italic text-[#E31413]">
-            "Best Teachers and Best Environtment for The Best Result"
+            Best Teachers and Best Environtment for The Best Result
           </blockquote>
         </article>
 
