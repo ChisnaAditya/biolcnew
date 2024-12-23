@@ -13,6 +13,7 @@ export default function Links() {
     onValue(dbRef, (snapshot) => {
       const data = snapshot.val();
       setLinks(Object.values(data));
+      console.log(data);
     });
   }, []);
 
@@ -43,7 +44,8 @@ export default function Links() {
               <button
                 key={index}
                 onClick={() => (window.location.href = `${item.link}`)}
-                className="font-semibold text-[#29363B] border-[#29363B] bg-[#FDBD13] p-2 border-[2px] border-b-[4px] rounded-xl w-full transition-all ease-out duration-75 hover:border-r-[4px] hover:border-b-[4px] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+                className={`${item.isVisible ? "block" : "hidden"}
+                font-semibold text-[#29363B] border-[#29363B] bg-[#FDBD13] p-2 border-[2px] border-b-[4px] rounded-xl w-full transition-all ease-out duration-75 hover:border-r-[4px] hover:border-b-[4px] hover:-translate-x-[2px] hover:-translate-y-[2px]`}
               >
                 {item.title}
               </button>
