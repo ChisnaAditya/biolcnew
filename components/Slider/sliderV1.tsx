@@ -51,8 +51,8 @@ const TrendingSlider = () => {
 
   return (
     <div className="flex gap-4 overflow-auto">
-      {filteredItems.map((item) => (
-        <div className="w-[200px] lg:w-[300px]">
+      {filteredItems.map((item, index) => (
+        <div key={index} className="w-[200px] lg:w-[300px]">
           <Image
             alt="fasilitas kampung inggris lc pare"
             src={item.img}
